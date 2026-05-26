@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route("/",methods=["GET"])
 def home():
-    return "Hello, sumil this is deployed from cloud run!"
+    return "Hello, sumil this is deployed from GKE!"
 
 @app.route("/index",methods=["GET"])
 def index():
