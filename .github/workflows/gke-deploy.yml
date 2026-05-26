@@ -11,7 +11,7 @@ env:
   GAR_REPOSITORY: my-docker-repo # Name of your Artifact Registry repository
   IMAGE_NAME: my-app
   GKE_CLUSTER: my-gke-cluster # Name of your GKE cluster
-  GKE_ZONE: us-central1-a # Zone or region of your GKE cluster
+  GKE_ZONE: us-central1 # Zone or region of your GKE cluster
   DEPLOYMENT_NAME: my-app-deployment # Name of the deployment inside Kubernetes
 
 jobs:
