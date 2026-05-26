@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+<div>
+<form action="{{ url_for('form')}}" method="post">
+  <input type="text" name="math" placeholder="math" required="required" ><br>
+  <input type="text" name="science" placeholder="science" required="required" ><br>
+  <input type="text" name="history" placeholder="history" required="required" ><br>
+  <button type="submit" value="Submit"> submit and calculte </button><br>
+  Average  is {{score}}
+
+</form> 
+</div>
+
+
+</body>
+</html>
