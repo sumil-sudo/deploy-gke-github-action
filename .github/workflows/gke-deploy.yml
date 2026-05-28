@@ -72,4 +72,4 @@ jobs:
         kubectl apply -f kubernetes/deployment.yml
         
         # Verify rollout status
-        kubectl rollout status deployment/${{ env.IMAGE_NAME }}-deployment
+        kubectl rollout status deployment/${{ env.IMAGE_NAME }}-deployment -n demo
