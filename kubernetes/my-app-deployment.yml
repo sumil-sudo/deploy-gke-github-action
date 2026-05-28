@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: flask
-          image: us-central1-docker.pkg.dev/user-rkxfhglrrqjs/my-docker-repo/flask
+          image: IMAGE_PLACEHOLDER
           ports:
             - containerPort: 80
