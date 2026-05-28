@@ -66,10 +66,10 @@ jobs:
     - name: Deploy to GKE
       run: |
         # Dynamically substitute the image tag inside the deployment file
-        sed -i "s|IMAGE_PLACEHOLDER|${{ env.IMAGE_URI }}|g" k8s/deployment.yaml
+        sed -i "s|IMAGE_PLACEHOLDER|${{ env.IMAGE_URI }}|g" kubernetes/deployment.yaml
         
         # Apply configurations
-        kubectl apply -f k8s/deployment.yaml
+        kubectl apply -f kubernetes/deployment.yaml
         
         # Verify rollout status
         kubectl rollout status deployment/${{ env.IMAGE_NAME }}-deployment
